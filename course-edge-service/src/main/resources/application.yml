@@ -1,0 +1,9 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: course-service
+  registry:
+    address: zookeeper://192.168.122.152:2181
+  scan:
+    base-packages: com.zzg.course

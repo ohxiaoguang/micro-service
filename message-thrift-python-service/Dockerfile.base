@@ -1,0 +1,4 @@
+FROM python:3.6
+MAINTAINER zzg 975129758@qq.com
+
+RUN pip install thrift

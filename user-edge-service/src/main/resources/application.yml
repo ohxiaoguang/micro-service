@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: user-edge-service
+  redis:
+    host: 192.168.122.152
+    port: 6379
+    timeout: 30000
+thrift:
+  userservice:
+    ip: user-service
+    port: 7911
+  messageservice:
+    ip: message-service
+    port: 9090

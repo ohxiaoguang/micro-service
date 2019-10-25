@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: course-service
+  datasource:
+    url: jdbc:mysql://192.168.122.152:3306/ms_db_course
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+thrift:
+  userservice:
+    ip: user-service
+    port: 7911
+dubbo:
+  application:
+    name: course-service
+  registry:
+    address: zookeeper://192.168.122.152:2181
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.zzg.course

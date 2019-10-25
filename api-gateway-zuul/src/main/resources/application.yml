@@ -1,0 +1,10 @@
+server:
+  port: 8080
+zuul:
+  routes:
+    course:
+      path: /course/**
+      url: http://course-service:8081/course/
+    user:
+      path: /user/**
+      url: http://user-service:8082/user/
